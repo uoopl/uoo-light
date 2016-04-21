@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -59,61 +59,91 @@
 <packages>
 <package name="ESP12E-SMD">
 <wire x1="0" y1="0" x2="16" y2="0" width="0.127" layer="21"/>
-<smd name="P$1" x="0" y="-8" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$2" x="0" y="-10" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$3" x="0" y="-12" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$4" x="0" y="-14" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$5" x="0" y="-16" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$6" x="0" y="-18" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$7" x="0" y="-20" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$8" x="0" y="-22" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$9" x="3" y="-24" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
-<smd name="P$10" x="5" y="-24" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
-<smd name="P$11" x="7" y="-24" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
-<smd name="P$12" x="9" y="-24" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
-<smd name="P$13" x="11" y="-24" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
-<smd name="P$14" x="13" y="-24" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
-<smd name="P$15" x="16" y="-22" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
-<smd name="P$16" x="16" y="-20" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
-<smd name="P$17" x="16" y="-18" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
-<smd name="P$18" x="16" y="-16" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
-<smd name="P$19" x="16" y="-14" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
-<smd name="P$20" x="16" y="-12" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
-<smd name="P$21" x="16" y="-10" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
-<smd name="P$22" x="16" y="-8" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
+<smd name="P$1" x="0.25" y="-8" dx="1.4224" dy="1.0668" layer="1"/>
+<smd name="P$2" x="0.25" y="-10" dx="1.4224" dy="1.0668" layer="1"/>
+<smd name="P$3" x="0.25" y="-12" dx="1.4224" dy="1.0668" layer="1"/>
+<smd name="P$4" x="0.25" y="-14" dx="1.4224" dy="1.0668" layer="1"/>
+<smd name="P$5" x="0.25" y="-16" dx="1.4224" dy="1.0668" layer="1"/>
+<smd name="P$6" x="0.25" y="-18" dx="1.4224" dy="1.0668" layer="1"/>
+<smd name="P$7" x="0.25" y="-20" dx="1.4224" dy="1.0668" layer="1"/>
+<smd name="P$8" x="0.25" y="-22" dx="1.4224" dy="1.0668" layer="1"/>
+<smd name="P$9" x="3" y="-23.75" dx="1.4224" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$10" x="5" y="-23.75" dx="1.4224" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$11" x="7" y="-23.75" dx="1.4224" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$12" x="9" y="-23.75" dx="1.4224" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$13" x="11" y="-23.75" dx="1.4224" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$14" x="13" y="-23.75" dx="1.4224" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$15" x="15.75" y="-22" dx="1.4224" dy="1.0668" layer="1" rot="R180"/>
+<smd name="P$16" x="15.75" y="-20" dx="1.4224" dy="1.0668" layer="1" rot="R180"/>
+<smd name="P$17" x="15.75" y="-18" dx="1.4224" dy="1.0668" layer="1" rot="R180"/>
+<smd name="P$18" x="15.75" y="-16" dx="1.4224" dy="1.0668" layer="1" rot="R180"/>
+<smd name="P$19" x="15.75" y="-14" dx="1.4224" dy="1.0668" layer="1" rot="R180"/>
+<smd name="P$20" x="15.75" y="-12" dx="1.4224" dy="1.0668" layer="1" rot="R180"/>
+<smd name="P$21" x="15.75" y="-10" dx="1.4224" dy="1.0668" layer="1" rot="R180"/>
+<smd name="P$22" x="15.75" y="-8" dx="1.4224" dy="1.0668" layer="1" rot="R180"/>
 <text x="8" y="-13" size="1.27" layer="25" align="center">&gt;NAME</text>
 <wire x1="0" y1="-7" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="16" y1="-7" x2="16" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="-23" x2="0" y2="-24" width="0.127" layer="21"/>
 <wire x1="0" y1="-24" x2="2" y2="-24" width="0.127" layer="21"/>
-<wire x1="17" y1="-23" x2="17" y2="-24" width="0.127" layer="21"/>
-<wire x1="17" y1="-24" x2="14" y2="-24" width="0.127" layer="21"/>
+<wire x1="16" y1="-23" x2="16" y2="-24" width="0.127" layer="21"/>
+<wire x1="16" y1="-24" x2="14" y2="-24" width="0.127" layer="21"/>
+<polygon width="0.127" layer="41">
+<vertex x="-0.4" y="0" curve="-90"/>
+<vertex x="0" y="0.4"/>
+<vertex x="16" y="0.4" curve="-90"/>
+<vertex x="16.4" y="0"/>
+<vertex x="16.4" y="-5" curve="-90"/>
+<vertex x="16" y="-5.4"/>
+<vertex x="0" y="-5.4" curve="-90"/>
+<vertex x="-0.4" y="-5"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-0.4" y="0" curve="-90"/>
+<vertex x="0" y="0.4"/>
+<vertex x="16" y="0.4" curve="-90"/>
+<vertex x="16.4" y="0"/>
+<vertex x="16.4" y="-5" curve="-90"/>
+<vertex x="16" y="-5.4"/>
+<vertex x="0" y="-5.4" curve="-90"/>
+<vertex x="-0.4" y="-5"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="-0.4" y="0" curve="-90"/>
+<vertex x="0" y="0.4"/>
+<vertex x="16" y="0.4" curve="-90"/>
+<vertex x="16.4" y="0"/>
+<vertex x="16.4" y="-5" curve="-90"/>
+<vertex x="16" y="-5.4"/>
+<vertex x="0" y="-5.4" curve="-90"/>
+<vertex x="-0.4" y="-5"/>
+</polygon>
 </package>
 <package name="G3MB-202P">
-<pad name="-" x="0" y="0" drill="0.8"/>
-<pad name="+" x="2.54" y="0" drill="0.8"/>
-<pad name="AC1" x="12.7" y="0" drill="0.8" shape="long"/>
-<pad name="AC2" x="20.32" y="0" drill="0.8" shape="long"/>
-<wire x1="-2.54" y1="1.905" x2="22.86" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="1.905" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-3.81" x2="22.86" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="22.86" y1="-3.81" x2="22.86" y2="1.905" width="0.127" layer="21"/>
+<pad name="-" x="0" y="0" drill="1.016"/>
+<pad name="+" x="2.54" y="0" drill="1.016"/>
+<pad name="AC1" x="12.7" y="0" drill="1.016" shape="long"/>
+<pad name="AC2" x="20.32" y="0" drill="1.016" shape="long"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="3.81" x2="22.225" y2="3.81" width="0.127" layer="21"/>
+<wire x1="22.86" y1="3.175" x2="22.86" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="22.225" y1="-1.905" x2="-1.905" y2="-1.905" width="0.127" layer="21"/>
 </package>
 <package name="HLK-PM01">
-<pad name="AC1" x="-20.32" y="2.54" drill="0.8" shape="long"/>
-<pad name="AC2" x="-20.32" y="-2.54" drill="0.8" shape="long"/>
-<pad name="GND" x="8.89" y="7.62" drill="0.8" shape="square"/>
-<pad name="VCC" x="8.89" y="-7.62" drill="0.8"/>
-<wire x1="11.43" y1="10.16" x2="-22.86" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-22.86" y1="10.16" x2="-22.86" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-22.86" y1="-10.16" x2="11.43" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="11.43" y1="-10.16" x2="11.43" y2="10.16" width="0.127" layer="21"/>
-<text x="-6.35" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-15.24" y="0" size="1.27" layer="25" rot="R180" align="center">AC IN</text>
-<text x="3.81" y="0" size="1.27" layer="25" rot="R180" align="center">DC OUT</text>
-<text x="-20.32" y="0" size="1.27" layer="25" rot="R270" align="center">~</text>
-<text x="3.81" y="-7.62" size="1.27" layer="25" align="center">VCC+</text>
-<text x="3.81" y="7.62" size="1.27" layer="25" align="center">VCC-</text>
+<pad name="AC1" x="-14.605" y="2.54" drill="1.016" shape="long"/>
+<pad name="AC2" x="-14.605" y="-2.54" drill="1.016" shape="long"/>
+<pad name="GND" x="14.605" y="7.62" drill="1.016" shape="square"/>
+<pad name="VCC" x="14.605" y="-7.62" drill="1.016"/>
+<wire x1="17.145" y1="10.16" x2="-17.145" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="10.16" x2="-17.145" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="-10.16" x2="17.145" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="17.145" y1="-10.16" x2="17.145" y2="10.16" width="0.127" layer="21"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-9.525" y="0" size="1.27" layer="25" rot="R180" align="center">AC IN</text>
+<text x="9.525" y="0" size="1.27" layer="25" rot="R180" align="center">DC OUT</text>
+<text x="-14.605" y="0" size="1.27" layer="25" rot="R270" align="center">~</text>
+<text x="9.525" y="-7.62" size="1.27" layer="25" align="center">VCC+</text>
+<text x="9.525" y="7.62" size="1.27" layer="25" align="center">VCC-</text>
 </package>
 </packages>
 <symbols>
